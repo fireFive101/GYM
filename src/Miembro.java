@@ -1,4 +1,4 @@
-public class Member{
+public class Miembro{
 
   private String fechaRegistro;
 
