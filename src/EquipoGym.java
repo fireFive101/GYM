@@ -1,10 +1,10 @@
-public class Equipo {
+public class EquipoGym {
 
     private String nombre;
     private String tipo; // "Cardio" o "Pesos"
     private boolean disponible;
 
-    public Equipo(String nombre, String tipo, boolean disponible) {
+    public EquipoGym(String nombre, String tipo, boolean disponible) {
         this.nombre = nombre;
         this.tipo = tipo;
         this.disponible = disponible;

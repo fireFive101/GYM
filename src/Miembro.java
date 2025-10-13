@@ -3,11 +3,11 @@ public class Miembro{
   private String fechaRegistro;
 
   public String getFecharegistro() {
-        return fecharegistro;
+        return fechaRegistro;
     }
 
   public void setFecharegistro(String fecharegistro) {
-        this.fecharegistro = fecharegistro;
+        this.fechaRegistro = fecharegistro;
     }
   
 }

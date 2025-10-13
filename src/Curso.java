@@ -26,7 +26,4 @@ public class Curso {
     public void setCapacidadMaxima(int capacidadMaxima) {
         this.capacidadMaxima = capacidadMaxima;
     }
-    
-    
-    
 }
