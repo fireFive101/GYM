@@ -1,9 +1,12 @@
+package modelo;
+
 public class Persona{
 
   private String nombre;
   private String id;
   private String tel;
   private String email;
+  private String fechaRegistro;
 
     public String getNombre() {
         return nombre;
@@ -35,6 +38,14 @@ public class Persona{
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public String getFecharegistro(){
+        return fechaRegistro;
+    }
+
+    public void setFechaRegistro(String fechaRegistro){
+        this.fechaRegistro = fechaRegistro;
     }
     
   

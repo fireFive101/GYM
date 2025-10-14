@@ -1,3 +1,5 @@
+package modelo;
+
 public class Membresia{
 
   private String tipo;

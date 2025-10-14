@@ -1,3 +1,5 @@
+package modelo;
+
 public class Instructor {
     private String especialidad;
     private int experienciaAnos;

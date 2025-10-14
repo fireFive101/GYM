@@ -1,3 +1,5 @@
+package modelo;
+
 public class Curso {
     private String nombreClase;
     private String horario;
