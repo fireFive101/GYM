@@ -3,6 +3,7 @@ package principal;
 import modelo.Miembro;
 import modelo.Instructor;
 import modelo.Actividad;
+import modelo.EquipoGym;
 
 public class Principal {
     public static void main(String[] args) {
@@ -60,5 +61,18 @@ public class Principal {
         for (Miembro m : yogaManana.getMiembrosInscritos()) {
             System.out.println("- " + m.getNombre());
         }
+         EquipoGym caminadora = new EquipoGym("Caminadora Pro", "Cardio", false);
+
+        System.out.println("Estado inicial:");
+        System.out.println(caminadora);
+
+        caminadora.marcarDisponible();
+        System.out.println("\nActivando el equipo...");
+        System.out.println(caminadora);
+
+        caminadora.marcarEnUso();
+        System.out.println("\nEquipo en uso:");
+        System.out.println(caminadora);
     }
 }
+
