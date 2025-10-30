@@ -7,12 +7,13 @@ import modelo.Actividad;
 public class Principal {
     public static void main(String[] args) {
         // 1. CREAR EL MIEMBRO EXISTENTE
-        Miembro m1 = new Miembro();
-        m1.setNombre("Carlos Andrade");
-        m1.setId("M001");
-        m1.setTel("555-1234");
-        m1.setEmail("carlos@example.com");
-        m1.setFechaRegistro("2025-10-14");
+        Miembro m1 = new Miembro(
+    "Carlos Andrade",
+    "M001",
+    "555-1234",
+    "carlos@example.com",
+    "2025-10-14"
+);
 
         // 2. CREAR UN INSTRUCTOR
         // Usando el nuevo constructor que incluye los datos de Persona
@@ -48,17 +49,8 @@ public class Principal {
         System.out.println("Inscripción de " + m1.getNombre() + ": " + (inscrito ? "ÉXITO" : "FALLÓ"));
         
         // Crear un segundo miembro para llenar la capacidad (2/2)
-        Miembro m2 = new Miembro();
-        m2.setNombre("Ana García");
-        m2.setId("M002");
-        yogaManana.agregarMiembro(m2);
-
-        // Intento de inscripción fallido (capacidad máxima es 2)
-        Miembro m3 = new Miembro();
-        m3.setNombre("Pedro Ruiz");
-        m3.setId("M003");
-        boolean inscritoFallido = yogaManana.agregarMiembro(m3);
-        System.out.println("Inscripción de " + m3.getNombre() + ": " + (inscritoFallido ? "ÉXITO" : "FALLÓ"));
+        Miembro m2 = new Miembro("Ana García", "M002", "555-9876", "ana@example.com", "2025-10-14");
+        Miembro m3 = new Miembro("Pedro Ruiz", "M003", "555-0000", "pedro@example.com", "2025-10-14");
 
         // Mostrar disponibilidad después de los intentos
         System.out.println(yogaManana.mostrarDisponibilidad());
